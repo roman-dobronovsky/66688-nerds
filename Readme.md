@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Roman Dobronovsky](https://up.htmlacademy.ru/htmlcss/13/user/66688).
-* Наставник: [Владимир ;) Меркулов](https://htmlacademy.ru/profile/straniks).
+* Наставник: [Владимир 👽 Меркулов](https://htmlacademy.ru/profile/straniks).
 
 ---
 
