@@ -21,9 +21,7 @@
             <div class="user-block">
                 <a class="cart" href="#">Корзина</a>
             </div>
-            <div class="promo">
-                <h1>Добро пожаловать в магазин готовых макетов</h1>
-            </div>
+            <h1 class="promo">Добро пожаловать в магазин готовых макетов</h1>
         </div>
     </header>
     <main class="container">
@@ -32,10 +30,7 @@
                 <h3>Стоимость:</h3>
                 <div class="range-filter">
                     <div class="range-controls">
-                        <div class="scale">
-                            <div class="bar">
-                            </div>
-                        </div>
+                       <!-- Слайдер цены -->
                     </div>
                     <div class="price-contols">
                         от <input class="min-price" type="text" value="0">
@@ -65,12 +60,11 @@
                 <label for="gallery">Галерея</label>
                 <input id="cart" type="checkbox">
                 <label for="cart">Корзина</label>
-                </section>
-                <input type="submit" value="Показать">
             </section>
+            <input type="submit" value="Показать">
         </form>
         <section class="items">
-            <section class="items-sort-by">
+            <section class="items-sort-by"><!-- Заменить на див -->
                 <h4>Сортировать</h4>
                 <a href="#" class="items-sort-by-price">
                     <span>по цене</span>
@@ -86,7 +80,7 @@
                 <div class="item">
                     <div class="item-scroll">
                     </div>
-                    <a href="#"><img src="#" width="" height="" alt=""></a>
+                    <a href="#"><img src="#" width="" height="" alt=""></a><!-- убираем ссылки, добавляем параграфы -->
                 </div>
                 <div class="item">
                     <div class="item-scroll">
@@ -114,17 +108,17 @@
                     <a href="#"><img src="#" width="" height="" alt=""></a>
                 </div>
             </section>
-            <section class="paginator">
-                <a href="#">1</a>
+            <ul class="paginator">
+                <li><a href="#">1</a></li>
                 <a href="#">2</a>
                 <a href="#">3</a>
                 <a href="#" class="next">Следующая</a>
             </section>
         </section>
-        <section class="map">
+    </main>
+    <section class="map">
             <img src="#" width="" height="" alt="Карта проезда">
         </section>
-    </main>
     <footer class="page-footer">
         <div class="container">
             <section class="footer-social">
