@@ -22,10 +22,7 @@ h2 {
 
 .page-header {
     margin-bottom: 75px;
-}
-
-.top {
-    display: block;
+    background-color: #EEEEEE;
 }
 
 .container {
@@ -38,7 +35,6 @@ h2 {
     margin: 0;
     padding: 0;
     list-style: none;
-    border: 1px solid #E5E5E5;
 }
 
 .main-menu li {
@@ -67,10 +63,10 @@ h2 {
     margin-top: 20px;
 }
 
-.cart {
-    float: right;
+.user-block {
+    float: left;
+    margin-top: 25px;
     width: 120px;
-    margin-right: 50px;
 }
 
 .promo {
@@ -90,5 +86,61 @@ h2 {
 }
 
 .services-item:last-child {
+    margin-bottom: 70px;
+}
+
+.services-item:last-child {
     margin-right: 0px;
+}
+
+hr {
+    width: 880px;
+    border: 1px solid #EEEEEE;
+}
+
+.about-us-left {
+    float: left;
+    width: 570px;
+    margin-right: 20px;
+}
+
+.about-us-right {
+    float: right;
+    width: 240px;
+}
+
+.client-logos {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.client-logos img {
+    display: inline-block;
+    width: 240px;
+    margin-right: 70px;
+    vertical-align: middle;
+}
+
+.client-logos img:last-child {
+    margin-right: 0px;
+}
+
+.map {
+    display: block;
+    width: 880px;
+    border: 1px solid black;
+    min-height: 415px;
+}
+
+.page-footer {
+    margin-top: 60px;
+}
+
+.footer-social {
+    float: left;
+    margin-right: 10px;
+}
+
+.footer-affiliate {
+    float: right;
 }
