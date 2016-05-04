@@ -130,6 +130,7 @@ hr {
     width: 880px;
     border: 1px solid black;
     min-height: 415px;
+    clear: both;
 }
 
 .page-footer {
@@ -143,4 +144,35 @@ hr {
 
 .footer-affiliate {
     float: right;
+}
+
+.filters {
+    float: left;
+    width: 240px;
+}
+
+.items {
+    float: right;
+    width: 565px;
+}
+
+.item {
+    display: inline-block;
+}
+
+.paginator {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.paginator li {
+    display:inline-block;
+    margin-right: 5px;
+}
+
+.paginator a {
+    display: block;
+    padding: 8px 10px;
+    color: #0088CC;
 }
