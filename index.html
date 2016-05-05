@@ -3,32 +3,71 @@
 <head>
     <meta charset="utf-8">
     <title>Дизайн-студия "Нёрдс"</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
+    <!-- Header -->
     <header class="page-header">
-        <div class="container">
-            <div class="top">
-                <img class="site-logo" src="img/logo.png" width="" height="" alt="Логотип сайта">
-                <nav>
+        <!-- Main Navigation -->
+        <div class="container clearfix">
+            <!-- Logo -->
+            <img class="site-logo" src="img/logo.png" width="140" height="55" alt="Дизайн-студия Нёрдс" title="Дизайн-студия Нёрдс">
+            <!-- Main Menu -->
+            <nav>
                 <ul class="main-menu">
                     <li><a href="#">Студия</a></li>
                     <li><a href="#">Клиенты</a></li>
                     <li><a href="#">Магазин</a></li>
                     <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Корзина</a></li>
                 </ul>
-                </nav>
-                <div class="user-block">
-                    <a class="cart" href="#">Корзина</a>
+            </nav>
+        </div>
+        <!-- Gallery -->
+        <div class="container clearfix">
+            <div class="gallery">
+                <!-- Toggles -->
+                <input type="radio" id="btn-1" name="toggle" checked>
+                <input type="radio" id="btn-2" name="toggle">
+                <input type="radio" id="btn-3" name="toggle">
+                <div class="gallery-toggles">
+                    <label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                    <label for="btn-3"></label>
                 </div>
-            </div>
-            <div class="promo">
-                <h1>Долго, дорого, скрупулёзно.</h2>
-                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                <a class="btn" href="#">Узнать больше</a>
+                <!-- Slides -->
+                <div class="slides">
+                    <div class="slide">
+                        <div class="slide-text">
+                            <h1 class="slide-title">Долго, дорого, скрупулезно</h2>
+                            <p>Математически выверенный дизайн<br>
+                            для вашего сайта или мобильного приложения.</p>
+                            <a class="btn" href="#">Узнать больше</a>
+                            </div>
+                        </div>
+                    <div class="slide">
+                        <div class="slide-text">
+                            <h1 class="slide-title">Дорого, скрупулезно</h2>
+                            <p>Математически выверенный дизайн<br>
+                            для вашего сайта или мобильного приложения.</p>
+                            <a class="btn" href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-text">
+                            <h1 class="slide-title">Скрупулезно</h2>
+                            <p>Математически выверенный дизайн<br>
+                            для вашего сайта или мобильного приложения.</p>
+                            <a class="btn" href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
+    <!-- Main content -->
     <main class="container">
         <section class="services">
             <div class="services-item">

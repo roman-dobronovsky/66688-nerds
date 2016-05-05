@@ -1,9 +1,15 @@
-body {
+html,body{
+    margin: 0;
+    padding: 0;
+}
+body{
     font-size: 16px;
+    font-family: 'Roboto', Arial, sans-serif;
 	line-height: 22px;
-	font-weight: normal;
-	color: #283136;
-	font-family: "Roboto Medium", Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    background: white;
 }
 
 h1 {
@@ -20,59 +26,13 @@ h2 {
     font-weight: bold;
 }
 
-.page-header {
-    margin-bottom: 75px;
-    background-color: #EEEEEE;
-}
-
 .container {
     width: 880px;
-    margin: 0 auto;
-    padding: 0 10px;
+	margin: 0 auto;
+	padding: 0 10px;
 }
 
-.main-menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
-.main-menu li {
-    display:inline-block;
-    margin-right: 5px;
-}
-
-.main-menu a {
-    display: block;
-    padding: 8px 10px;
-    color: #0088CC;
-}
-
-.site-logo {
-    float: left;
-    width: 140px;
-    height: 55px;
-    margin-right: 50px;
-    margin-bottom: 70px;
-}
-
-.main-menu {
-    float: left;
-    width: 430px;
-    margin-right: 50px;
-    margin-top: 20px;
-}
-
-.user-block {
-    float: left;
-    margin-top: 25px;
-    width: 120px;
-}
-
-.promo {
-    display: block;
-    clear: both;
-}
 
 .services {
     display: block;
@@ -175,4 +135,5 @@ hr {
     display: block;
     padding: 8px 10px;
     color: #0088CC;
+    text-decoration: none;
 }
