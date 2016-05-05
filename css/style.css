@@ -285,6 +285,21 @@ hr {
     width: 240px;
 }
 
+.lead {
+    font-size: 35px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.about-us-left h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.about-us-right img {
+    margin-bottom: 15px;
+}
+
 .client-logos {
     padding-top: 40px;
     padding-bottom: 40px;
