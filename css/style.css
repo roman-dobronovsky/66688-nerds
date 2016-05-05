@@ -13,7 +13,7 @@ body{
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 31px;
     line-height: 48px;
     color: #000000;
     font-weight: bold;
@@ -32,7 +32,53 @@ h2 {
 	padding: 0 10px;
 }
 
+.clearfix::after {
+    content: "";
+	display: table;
+	clear: both;
+}
 
+.btn {
+    display:block;
+    padding:12px 0;
+    font-size:12px;
+    color:white;
+    text-transform:uppercase;
+    text-align:center;
+    text-decoration:none;
+    background:#fb565a;
+    border-radius:3px;
+	cursor: pointer;
+}
+
+.page-header {
+    background-color: #EEEEEE;
+}
+
+
+.slide:nth-child(1){
+    background-image:url("../img/slider-1.png");
+    background-repeat:no-repeat;
+    background-position:100% 10px;
+}
+
+.slide:nth-child(2){
+    background-image:url("../img/slider-2.png");
+    background-repeat:no-repeat;
+    background-position:100% 10px;
+}
+
+.slide:nth-child(3){
+    background-image:url("../img/slider-3.png");
+    background-repeat:no-repeat;
+    background-position:100% 0;
+}
+
+.slide .btn {
+    width:240px;
+    padding:10px 0;
+    margin-top:25px;
+}
 
 .services {
     display: block;
