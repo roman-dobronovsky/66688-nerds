@@ -21,38 +21,38 @@
   }
 }
 */
- 
+
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "symbols-nerds";
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
+
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
- 
+
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-     
+
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
- 
+
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
- 
+
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
- 
+
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
+
 .icon-basket:before { content: '\62'; } /* 'b' */
 .icon-facebook:before { content: '\66'; } /* 'f' */
 .icon-twitter:before { content: '\74'; } /* 't' */
@@ -117,7 +117,7 @@ body{
 
 .main-navigation {     /* Меню хедера */
 	float: right;
-	width: 520px;		/* ... 580рх, но тогда остается лишнее место после Корзины... */
+	width: 580px;		/* ... 580рх, но тогда остается лишнее место после Корзины... */
 	margin-top: 48px;
 }
 
@@ -149,6 +149,7 @@ body{
 	text-decoration: none;
 	color: #000;
 	cursor: pointer;
+    text-transform: uppercase;
 }
 
 .main-navigation li:last-child a {		/* Последний элемент меню Хедера (корзина) */
@@ -196,18 +197,18 @@ li.active:last-child a::after {			/* Подчеркивание (псевдоэ�
 }
 
 .icon-basket {						/* Иконка Корзины */
-	opacity: 0.3;					/* color: #bdbdbd; темно-серый */
+	opacity: 0.3;
 	position: absolute;
 	left: 0;
 }
 
 
 a:hover .icon-basket {
-	opacity: 1; 
+	opacity: 1;
 }
 
 a:active .icon-basket {
-	opacity: 0.15; 
+	opacity: 0.15;
 }
 
 /* Слайдер ------------------------------------------------------- */
@@ -252,7 +253,7 @@ a:active .icon-basket {
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] { 
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
     background:#c1c1c1;
 }
 
@@ -305,15 +306,15 @@ a:active .icon-basket {
     display:none;
 }
 
-#btn-1:checked ~ .slides .slide:nth-child(1) { 
+#btn-1:checked ~ .slides .slide:nth-child(1) {
     display: block;
 }
 
-#btn-2:checked ~ .slides .slide:nth-child(2) { 
+#btn-2:checked ~ .slides .slide:nth-child(2) {
     display: block;
 }
 
-#btn-3:checked ~ .slides .slide:nth-child(3) { 
+#btn-3:checked ~ .slides .slide:nth-child(3) {
     display: block;
 }
 
@@ -458,17 +459,17 @@ a:active .icon-basket {
 
 .picture-logo {				/* Логотип (второй) в правой колонке */
 	text-align: center;
-	margin-top: 59px;
+	margin-top: 40px;
 }
 .caption-logo {				/* Строка под вторым логотипом */
 	margin-top: 30px;
-	margin-bottom: 70px;  
+	margin-bottom: 70px;
 	text-align: center;
 }
 
 .caption-logo h2 {			/* Заголовок строки под вторым логотипом */
 	position: relative;
-	z-index:2;  
+	z-index:2;
 	display: inline;
 	margin: 0;
 	padding: 0 15px;
@@ -481,17 +482,17 @@ a:active .icon-basket {
 }
 
 .caption-logo:after {		/* Псевдоэлемент заголовка строки (горизонтальная полоса) */
-	content: ""; 
+	content: "";
 	position: relative;
 	top: -10px;
-	z-index: 1;  
+	z-index: 1;
 	display: block;
 	border-bottom: 2px solid #eee;
 }
 
 /* Логотипы ------------------------------------------------------ */
 .partners {					/* Блок логотипов */
-	height: 166px;	
+	height: 166px;
 	border-top: 2px solid #eee;
 	border-bottom: 2px solid #eee;
 	font-size: 0;  /* борьба с пробелами в инлайн-блоках! */
@@ -511,7 +512,7 @@ a:active .icon-basket {
 
 .partners .partner-item img {			/* Изображение логотипа */
 	opacity: 0.2;
-	vertical-align: middle;			
+	vertical-align: middle;
 }
 
 .partners .partner-item img:hover {		/* Изображение логотипа при наведении */
@@ -597,7 +598,7 @@ a:active .icon-basket {
 	text-decoration: none;
 	color: #000;
 	cursor: pointer;
-	opacity: 0.3;	
+	opacity: 0.3;
 	border-bottom: 1px dotted #00ca74;
 }
 
@@ -808,22 +809,22 @@ a:active .icon-basket {
 
 /* События элементов формы при НАВЕДЕНИИ */
 .left-part-form input[type="radio"] + label:hover, 						/* при наведении на лейблы */
-.left-part-form input[type="radio"]:checked + label:hover, 
+.left-part-form input[type="radio"]:checked + label:hover,
 .left-part-form input[type="checkbox"] + label:hover,
 .left-part-form input[type="checkbox"]:checked + label:hover {
 	color: #000;
 }
 
 .left-part-form input[type="radio"] + label:hover::before, 				/* при наведении на "псевдо" радиобаттоны и чекбоксы */
-.left-part-form input[type="radio"]:checked + label:hover::before, 
+.left-part-form input[type="radio"]:checked + label:hover::before,
 .left-part-form input[type="checkbox"] + label:hover::before,
-.left-part-form input[type="checkbox"]:checked + label:hover::before {	
-	color: #b5b5b5; 
+.left-part-form input[type="checkbox"]:checked + label:hover::before {
+	color: #b5b5b5;
 }
 
 /* События элементов формы при БЛОКИРОВКЕ */
 .left-part-form input[type="radio"]:disabled + label,					/* лейблы при блокировке input[] */
-.left-part-form input[type="radio"]:checked:disabled + label, 
+.left-part-form input[type="radio"]:checked:disabled + label,
 .left-part-form input[type="checkbox"]:disabled + label,
 .left-part-form input[type="checkbox"]:checked:disabled + label {
 	color: #283136;
@@ -831,7 +832,7 @@ a:active .icon-basket {
 }
 
 .left-part-form input[type="radio"]:disabled + label::before,			/* "псевдо-" радиобаттоны и чекбоксы при блокировке */
-.left-part-form input[type="radio"]:checked:disabled + label::before, 
+.left-part-form input[type="radio"]:checked:disabled + label::before,
 .left-part-form input[type="checkbox"]:disabled + label::before,
 .left-part-form input[type="checkbox"]:checked:disabled + label::before {
 	color: #b5b5b5;
@@ -1030,7 +1031,7 @@ a:active .icon-basket {
 }
 
 .map-contacts .open {
-	
+
 }
 
 .marker img {
@@ -1110,8 +1111,8 @@ a:active .icon-basket {
 	display: none;									/* Написать JS, меняющий значение display с "none" на "block" */
 	position: fixed;
 	left: 50%;
-	top: 50%; 							
-	transform:translate(-50%, -50%);	
+	top: 50%;
+	transform:translate(-50%, -50%);
 	width: 460px;
 	padding: 56px 90px 50px 80px;
 	background-color: #fff;
@@ -1134,42 +1135,42 @@ a:active .icon-basket {
 @keyframes show {			/* Кадры анимации открытия Модального окна */
  0% {
 		transform: scale(0);
-		opacity: 0.0;		
+		opacity: 0.0;
 	}
 	60% {
-		transform: scale(1.1);	
+		transform: scale(1.1);
 	}
 	80% {
 		transform: scale(0.9);
-		opacity: 1;	
-	}	
+		opacity: 1;
+	}
 	100% {
 		transform: scale(1);
-		opacity: 1;	
-	}	
+		opacity: 1;
+	}
 }
 
 .modal-show {		/* Отображение модального окна */
 	display: block;
-	animation: show .5s ease-in-out;	
+	animation: show .5s ease-in-out;
 }
 
 @keyframes close {			/* Кадры анимации закрытия Модального окна */
 	0% {
 		transform: scale(1);
-		opacity: 1;		
+		opacity: 1;
 	}
 	60% {
-		transform: scale(0.9);	
-        opacity: 1;	
+		transform: scale(0.9);
+        opacity: 1;
 	}
 	80% {
 		transform: scale(1.1);
-	}	
+	}
 	100% {
 		transform: scale(0);
-		opacity: 0;	
-	}		
+		opacity: 0;
+	}
 }
 
 .modal-close{						/* Закрытие модального окна */
@@ -1216,11 +1217,11 @@ a:active .icon-basket {
 
 .login-form input[type="text"]:hover, .login-form input[type="email"]:hover, .login-form textarea:hover {
 	border-color: #a2a9ac;
-} 
+}
 
 .login-form input[type="text"]:focus, .login-form input[type="email"]:focus, .login-form textarea:focus {
 	border-color: #56bffb;
-} 
+}
 
 .login-form label {
 	line-height: 18px;
