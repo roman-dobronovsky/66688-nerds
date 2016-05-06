@@ -94,6 +94,23 @@ body{
 
 .btn {					/* Кнопки */
     display:block;
+    height: 18px;
+    font-weight: normal;
+    padding:12px 0;
+    font-size:12px;
+    color:white;
+    text-transform:uppercase;
+    text-align:center;
+    text-decoration:none;
+    background:#fb565a;
+    border-radius:3px;
+	cursor: pointer;
+}
+
+button .btn {
+    display:block;
+    height: 18px;
+    font-weight: normal;
     padding:12px 0;
     font-size:12px;
     color:white;
@@ -112,12 +129,12 @@ body{
 	background: #eeeeee;
 }
 .main-header .container:first-child {		/* Первый блок-контейнер в Хедере (логотип и меню) */
-	height: 84px;
+	height: 74px;
 }
 
 .main-navigation {     /* Меню хедера */
 	float: right;
-	width: 580px;		/* ... 580рх, но тогда остается лишнее место после Корзины... */
+	width: 580px;
 	margin-top: 48px;
 }
 
@@ -131,13 +148,14 @@ body{
 .main-navigation ul {   /* Список меню хедера */
 	margin: 0;
 	padding: 0;
-	font-size: 0;  /* борьба с пробелами в инлайн-блоках! */
+	font-size: 0;
 	list-style: none;
 }
 
 .main-navigation li {    /* Элементы списка меню хедера */
 	display: inline-block;
-	font-size: 14px;
+    font-size: 0;
+
 	line-height: 30px;
 	vertical-align: middle;
 }
@@ -146,8 +164,9 @@ body{
 	position: relative;
 	display: block;
 	padding: 3px 20px;
+    font-size: 14px;
 	text-decoration: none;
-	color: #000;
+	color: #000000;
 	cursor: pointer;
     text-transform: uppercase;
 }
@@ -213,15 +232,14 @@ a:active .icon-basket {
 
 /* Слайдер ------------------------------------------------------- */
 .main-header .container:nth-child(2) {
-	padding-top: 42px;
+	padding-top: 32px;
 }
 
 .slider{
     position:relative;
     width:880px;
-    height:310px;
+    min-height:310px;
     margin:0 auto;
-	bottom: 0;
 }
 
 .slider input[type=radio] {
@@ -254,7 +272,7 @@ a:active .icon-basket {
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-    background:#c1c1c1;
+    background:#C1C1C1;
 }
 
 .slide{
@@ -268,7 +286,6 @@ a:active .icon-basket {
 
 .slide-text{
     width:380px;
-    padding:30px 0;
     color:#283136;
 }
 
@@ -276,6 +293,7 @@ a:active .icon-basket {
     font-size:36px;
     line-height:36px;
     color:black;
+    font-style: normal;
 }
 
 .slide .btn{					/* Кнопка в Слайдере */
@@ -537,7 +555,7 @@ a:active .icon-basket {
 .welcome {								/* Дополнительный класс приветствия */
 	display: block;
 	font-size: 40px;
-	line-height: 40px;		/* ...хотя указано auto в Фотошопе, но тогда текст сливается строками */
+	line-height: 50px;		/* ...хотя указано auto в Фотошопе, но тогда текст сливается строками */
 	color: black;
 	text-transform:uppercase;
 	text-align: center;
@@ -719,6 +737,8 @@ a:active .icon-basket {
 	margin-top: 47px;
 	margin-bottom: 17px;
 	font-weight: normal;
+    text-transform: uppercase;
+    font-size: 17px;
 }
 
 .left-part-form h2:first-child {
