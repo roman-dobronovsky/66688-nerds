@@ -712,15 +712,27 @@ a:active .icon-basket {
 .layout-buy p {
 	font-size: 14px;
     line-height: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.layout-buy .btn {
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
 .layout-item:nth-of-type(2n) {
 	margin-right: 0;
 }
 
+.form-criterion:first-child {
+    margin-bottom: 47px;
+}
+
+.form-criterion:nth-child(2) {
+    margin-bottom: 30px;
+}
+
 .left-part-form h2 {
-    margin-top:43px;
 	margin-bottom: 17px;
 	font-weight: normal;
     text-transform: uppercase;
